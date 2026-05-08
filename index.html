@@ -3,30 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D UI Pro Demo</title>
+    <title>Nebula Engine v5.0 | Deep Space</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="mesh-bg"></div>
-    <nav class="glass-sidebar">
-        <div class="logo">3D_LAB</div>
-        <ul>
-            <li>Dashboard</li>
-            <li>Showcase</li>
-            <li>Stats</li>
-        </ul>
-    </nav>
-    <main class="container">
-        <div class="hero-section">
-            <h1>Interactive 3D Graphics</h1>
-            <p>A professional showcase of CSS-only spatial transforms.</p>
+    <canvas id="canvas"></canvas>
+    <div id="scroll-height"></div>
+
+    <div class="hud-top">
+        <div class="system-status">
+            <span class="glitch" data-text="NEBULA_OS">NEBULA_OS</span>
+            <div class="line"></div>
+            <p>VECTORIAL RENDERING: ACTIVE</p>
         </div>
-        <div class="gallery">
-            <div class="card card-1"><h3>Data Model</h3></div>
-            <div class="card card-2"><h3>Neural Net</h3></div>
-            <div class="card card-3"><h3>Cloud Mesh</h3></div>
-        </div>
-    </main>
+    </div>
+
+    <div class="hud-bottom">
+        <div class="coord-box">X: <span id="val-x">0</span></div>
+        <div class="coord-box">Y: <span id="val-y">0</span></div>
+        <div class="coord-box">Z: <span id="val-z">0</span></div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
